@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://3d-in-the-wild.github.io/ -->
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="description" content="End-to-End 3D Learning">
+<meta name="keywords" content="End-to-End 3D">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>End-to-End 3D Learning Workshop</title>
+
+<style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fad.fa-inverse{color:#fff}</style><style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fad.fa-inverse{color:#fff}</style><link href="./data/css" rel="stylesheet">
+
+<link rel="stylesheet" href="./data/bulma.min.css">
+<link rel="stylesheet" href="./data/fontawesome.all.min.css">
+<link rel="stylesheet" href="./data/academicons.min.css">
+<link rel="stylesheet" href="./data/index.css">
+<link rel="icon" href="https://opensun3d.github.io/static/images/favicon.svg">
+<link rel="stylesheet" href="./data/style.css"> <!-- Resource style -->
+<script src="./data/modernizr.js"></script> <!-- Modernizr -->
+
+<script src="./data/jquery.min.js"></script>
+<script defer="" src="./data/fontawesome.all.min.js"></script>
+
+<style>
+  .page-header1 {
+    position: relative;
+    background-image: url('data/iccv.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 1rem;
+  }
+
+  .page-header1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+  }
+
+  .hero-body {
+    position: relative;
+    z-index: 1;
+  }
+
+  .publication-title {
+    color: #FF4500; /* Gold for emphasis */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+
+  .rcorners1 {
+    border-radius: 10px;
+    background: #ffffffd0;
+    padding: 5px;
+    font-size: 120%;
+    color: #e47d0f;
+  }
+
+  .button {
+    border-radius: 10px;
+    background: #ffffffd0;
+    padding: 5px 15px 5px 15px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 5px 15px 5px 15px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style>
+<style data-styled="active" data-styled-version="5.0.1"></style><style type="text/css">/* Copyright 2014-present Evernote Corporation. All rights reserved. */
+@keyframes caretBlink {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+}
+
+@keyframes rotateSpinner {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#text-tool-caret {
+    animation-name: caretBlink;  
+    animation-iteration-count: infinite;  
+    animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    animation-duration: 1s; 
+}
+
+#en-markup-loading-spinner {
+    position: absolute;
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+    width: 32px;
+    height: 32px;
+}
+
+#en-markup-loading-spinner img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    animation-name: rotateSpinner;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+</style><style type="text/css">/* Copyright 2014-present Evernote Corporation. All rights reserved. */
+.skitchToastBoxContainer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    pointer-events: none;
+}
+
+.skitchToastBox {
+    width: 200px;
+    height: 16px;
+    padding: 12px;
+    background-color: rgba(47, 55, 61, 0.95);
+    border-radius: 4px;
+    color: white;
+    cursor: default;
+    font-size: 10pt;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.32);
+    font-family: 'Soleil', Helvetica, Arial, sans-serif;
+    border: 2px rgba(255, 255, 255, 0.38) solid;
+}
+
+.lang-zh-cn .skitchToastBox {
+    font-family: '微软雅黑', 'Microsoft YaHei', SimSun,
+        '&#x30E1;&#x30A4;&#x30EA;&#x30AA;', Meiryo, 'MS PGothic', 'Soleil',
+        Helvetica, Arial, sans-serif;
+}
+
+.lang-ja-jp .skitchToastBox {
+    font-family: '&#x30E1;&#x30A4;&#x30EA;&#x30AA;', Meiryo, 'MS PGothic',
+        '微软雅黑', 'Microsoft YaHei', SimSun, 'Soleil', Helvetica, Arial,
+        sans-serif;
+}
+
+.skitchToast {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+    height: 10px;
+    color: #f1f5f8;
+    text-align: center;
+}
+
+.skitchVisible {
+    /* Don't remove this class it's a hack used by the Evernote Clipper */
+}
+</style><style type="text/css">/* Copyright 2014-present Evernote Corporation. All rights reserved. */
+
+@font-face {
+	font-family: 'Soleil';
+	font-weight: normal;
+	font-style: normal;
+}
+</style><style type="text/css">/* Copyright 2019-present Evernote Corporation. All rights reserved. */
+
+#en-markup-disabled {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    cursor: default;
+    -webkit-user-select: none;
+}
+
+#en-markup-alert-container {
+    position: absolute;
+    z-index: 9999;
+    width: 450px;
+    left: calc(50% - 225px);
+    top: calc(50% - 85px);
+    background-color: white;
+    box-shadow: 0 2px 7px 1px rgba(0,0,0,0.35);
+    -webkit-user-select: none;
+}
+
+#en-markup-alert-container .cell-1 {
+    position: relative;
+    height: 110px;
+    width: 105px;
+    float: left;
+    text-align: center;
+    background-position: 65% 50%;
+    background-repeat: no-repeat;
+}
+
+#en-markup-alert-container .cell-2 {
+    position: relative;
+    float: left;
+    width: 345px;
+    margin-top: 29px;
+    margin-bottom: 20px;
+}
+
+#en-markup-alert-container .cell-2 .cell-2-title {
+    margin-bottom: 5px;
+    padding-right: 30px;
+    font-size: 12pt;
+    font-family: Tahoma, Arial;
+}
+
+#en-markup-alert-container .cell-2 .cell-2-message {
+    padding-right: 30px;
+    font-size: 9.5pt;
+    font-family: Tahoma, Arial;
+}
+
+#en-markup-alert-container .cell-3 {
+    position: relative;
+    width: 450px;
+    height: 60px;
+    float: left;
+    background-color: rgb(240,240,240);
+}
+
+#en-markup-alert-container .cell-3 button {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    width: 110px;
+    height: 36px;
+}
+
+#en-markup-alert-container .cell-3 button.alt-button {
+    position: absolute;
+    top: 12px;
+    right: 140px;
+    width: 110px;
+    height: 36px;
+}
+</style></head>
+
+<body data-new-gr-c-s-check-loaded="14.1065.0" data-gr-ext-installed="">
+  <section class="hero page-header1">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title" style="color:#FF7F11 ">End-to-End 3D Learning<br></h1>
+            <h2 class="title is-5 " style="color:#EFECCA;">
+              <strong>in conjunction with ICCV 2025, Honolulu, Hawai'i </strong>
+              <br><br>
+              <strong>Time: Oct 19 - Oct 23, 2025, TBD</strong>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <h2 class="subtitle has-text-centered">
+        <a href="#schedule" class="button">Schedule</a>
+          <a href="#speakers" class="button">Speakers</a>
+          <a href="#dates" class="button">Call for Papers</a>
+          <!-- <a href="#papers" class="button">Accepted Papers</a> -->
+          <a href="#organizers" class="button">Organizers</a>
+        <!-- <a href="#reviewers" class="button">Program Committee</a> -->
+      </h2>
+    </div>
+  </section>
+
+  <section class="section" id="motivation">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Overview</h2>
+      <div class="content has-text-justified">
+        Recent breakthroughs in foundation models such as GPT for language and CLIP/Segment Anything for images have transformed how we process 2D and text data. However, the real world—from large-scale autonomous systems to molecular modeling—demands AI to go beyond flat images and achieve three-dimensional understanding. Enabling AI to see in 3D, reason about spatial relationships, and make real-time decisions based on visual inputs can unlock new capabilities in machine perception and action.
+        <br><br>
+        The <strong>End-to-End 3D Learning (E2E3D)</strong> workshop aims to bridge the gap between traditional multi-stage pipelines for 3D reconstruction, understanding, and generation, and unified data-driven approaches that work from raw inputs to complete 3D outputs. Traditional methods often rely on fragile and slow processes, such as Structure-from-Motion for 3D reconstruction. In contrast, end-to-end learning leverages deep learning to directly infer, generate, and reason about 3D structures. We envision future systems that not only recover 3D geometry but also continuously analyze dynamic scenes and make real-time decisions based on comprehensive visual input.
+        <br><br>
+        <strong>Focus of the Workshop:</strong>
+        <ul>
+          <li><strong>Tech Development:</strong> Design architectures that integrate traditional steps into a single, differentiable pipeline. Explore models that support real-time scene analysis and decision-making.</li>
+          <li><strong>Data Challenges:</strong> Develop strategies for efficiently processing diverse 3D data sources, such as multiple images, videos, point clouds, and voxels. Investigate methods like self-supervised learning and leveraging foundation models to overcome data scarcity.</li>
+          <li><strong>Research Directions:</strong> Present case studies that demonstrate the potential of an end-to-end 3D learning framework. Focus on methods that improve 3D perception and dynamic scene analysis.</li>
+          <li><strong>Real-World Impact:</strong> Highlight applications in robotic navigation, immersive AR/VR experiences, digital twin generation, and scientific imaging. Show how enhanced 3D understanding addresses real-world challenges.</li>
+        </ul>
+        Our workshop sits at the intersection of well-established 2D and multi-modal methods and the emerging needs of 3D AI. By uniting research from computer vision, robotics, AR/VR, and scientific imaging, we aim to tackle challenges in the physical world with unified, scalable, and efficient 3D solutions.
+      </div>
+    </div>
+  </section>
+  
+  <!-- <section class="section" id="schedule" style="margin-top:-100px">
+    <div class="container is-max-desktop">
+      <section class="section" id="schedule">
+        <div class="container is-max-desktop content">
+          <h2 class="title">Schedule</h2>
+          <div class="content has-text-justified">
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td width="130">09:00 - 09:10</td>
+                  <td width="300" style="background-color:#EFECCA">Opening Remarks </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>09:10 - 09:40</td>
+                  <td style="background-color:#795663;color:#EFECCA">Invited Talk 1<b></b></td>
+                  <td>Adam Harley</td>
+                </tr>
+                <tr>
+                  <td>09:40 - 10:10</td>
+                  <td style="background-color:#795663;color:#EFECCA">Invited Talk 2<b></b></td>
+                  <td>Deva Ramanan</td>
+                </tr>
+                <tr>
+                  <td>10:00 - 10:25</td>
+                  <td style="background-color:#5E565A;color:#EFECCA">Spotlight Presentation 1<b></b></td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>10:25 - 10:40</td>
+                  <td style="background-color:#5E565A;color:#EFECCA">Spotlight Presentation 2<b></b></td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>10:40 - 11:00</td>
+                  <td style="background-color:#EFECCA">Coffee Break</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>11:00 - 11:30</td>
+                  <td style="background-color:#795663;color:#EFECCA">Invited Talk 3<b></b></td>
+                  <td>Tali Dekel</td>
+                </tr>
+                <tr>
+                  <td>11:30 - 12:00</td>
+                  <td style="background-color:#795663;color:#EFECCA">Invited Talk 4<b></b></td>
+                  <td>Kristen Grauman</td>
+                </tr>
+                <tr>
+                  <td>12:00 - 13:30</td>
+                  <td style="background-color:#EFECCA">Lunch Break</td>
+                  <td></td>
+                <tr>
+                  <td>13:30 - 14:00</td>
+                  <td style="background-color:#795663;color:#EFECCA">Invited Talk 5<b></b></td>
+                  <td>David Fouhey</td>
+                </tr>
+                <tr>
+                  <td>14:00 - 14:45</td>
+                  <td style="background-color:#0081A7;color:#EFECCA">Poster Session</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>14:45 - 15:00</td>
+                  <td style="background-color:#5E565A;color:#EFECCA">Spotlight Presentation 1<b></b></td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>15:00 - 15:15</td>
+                  <td style="background-color:#5E565A;color:#EFECCA">Spotlight Presentation 1<b></b></td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>15:15 - 15:45</td>
+                  <td style="background-color:#795663;color:#EFECCA">Invited Talk 6<b></b></td>
+                  <td>Andrea Vedaldi</td>
+                </tr>
+                <tr>
+                  <td>15:45 - 16:15</td>
+                  <td style="background-color:#795663;color:#EFECCA">Invited Talk 7<b></b></td>
+                  <td>Angjoo Kanazawa</td>
+                </tr>
+                <tr>
+                  <td>16:15 - 17:00</td>
+                  <td style="background-color:#0081A7;color:#EFECCA">Panel Discussion</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>17:00 - 17:10</td>
+                  <td style="background-color:#EFECCA">Closing Remarks</td>
+                  <td></td>
+                </tr>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section> -->
+
+  <section class="section" id="speakers" style="margin-top:-50px">
+    <div class="container is-max-desktop content">
+      <h2 class="title" id="speakers">Invited Speakers</h2>
+
+      <a href="https://europe.naverlabs.com/people_user_naverlabs/Jerome-Revaud/" target="_blank">
+        <div class="card">
+          <div class="card-content">
+            <div class="columns is-vcentered">
+              <div class="column is-one-quarter">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="./data/Jerome Revaud.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <p class="title is-4">Dr. Jerome Revaud</p>
+                <p class="subtitle is-6">Naver Labs Europe</p>
+                <!-- <p class="subtitle is-5">Title: TBA</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://ir0.github.io/" target="_blank">
+        <div class="card">
+          <div class="card-content">
+            <div class="columns is-vcentered">
+              <div class="column is-one-quarter">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="./data/Iro Armeni.png">
+                </figure>
+              </div>
+              <div class="column">
+                <p class="title is-4">Prof. Iro Armeni</p>
+                <p class="subtitle is-6">Stanford</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://jiakai-zhang.github.io/" target="_blank">
+        <div class="card">
+          <div class="card-content">
+            <div class="columns is-vcentered">
+              <div class="column is-one-quarter">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="./data/ Jiakai Zhang.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <p class="title is-4">Jiakai Zhang</p>
+                <p class="subtitle is-6">ShanghaiTech University</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://ruoshiliu.github.io/" target="_blank">
+        <div class="card">
+          <div class="card-content">
+            <div class="columns is-vcentered">
+              <div class="column is-one-quarter">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="./data/Ruoshi Liu.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <p class="title is-4">Ruoshi Liu</p>
+                <p class="subtitle is-6">Columbia University</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- <a href="https://web.stanford.edu/~pavone/index.html" target="_blank">
+        <div class="card">
+          <div class="card-content">
+            <div class="columns is-vcentered">
+              <div class="column is-one-quarter">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="./data/Marco Pavone.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <p class="title is-4">Marco Pavone</p>
+                <p class="subtitle is-6">Stanford / NVIDIA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a> -->
+    </div>
+  </section>
+
+	<!-- <section class="section" id="Spotlight Speakers">
+    <div class="container is-max-desktop content">
+      <h2 class="title" id="spotlight-speakers">Spotlight Speakers</h2>
+
+      <a href="https://mightychaos.github.io/" target="_blank">
+        <div class="card">
+          <div class="card-content">
+            <div class="columns is-vcentered">
+              <div class="column is-one-quarter">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="./data/chaoyang_wang.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <p class="title is-4">Chaoyang Wang</p>
+                <p class="subtitle is-6">Snap</p>
+              </div>
+            </div>
+            <div class="content">
+                Chaoyang Wang is a research scientist at Snap Creative Vision Team, leading research in 4D reconstruction and generation. He obtained his PhD degree from Robotics Institute of Carnegie Mellon University, and was a member of CI2CV Lab led by Prof. Simon Lucey. Prior to CMU, he obtained his B.E. and M.S. degree from Shanghai Jiao Tong University.
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.junyi42.com/" target="_blank">
+        <div class="card">
+          <div class="card-content">
+            <div class="columns is-vcentered">
+              <div class="column is-one-quarter">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="./data/yufei_ye.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <p class="title is-4">Yufei Ye</p>
+                <p class="subtitle is-6">Stanford</p>
+              </div>
+            </div>
+            <div class="content">
+                Yufei Ye is a Postdoctoral Researcher in computer science at Stanford University. She received her PhD from Carnegie Mellon University. Her research focuses on the reconstruction and generation of human interactions and its applications in robotics. She received 2022 NVIDIA Graduate Fellowship and 2023 EECS Rising Star.
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://kerrj.github.io/" target="_blank">
+        <div class="card">
+          <div class="card-content">
+            <div class="columns is-vcentered">
+              <div class="column is-one-quarter">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="./data/justin_kerr.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <p class="title is-4">Justin Kerr</p>
+                <p class="subtitle is-6">UC Berkeley</p>
+              </div>
+            </div>
+            <div class="content">
+                Justin Kerr is a 4th year PhD at Berkeley's AI Research Lab co-advised by Angjoo Kanazawa and Ken Goldberg. His work primarily involves 3D multi-modal reconstruction and how it can enable robotic manipulation. He is also a maintainer of Nerfstudio, a large open-source, open-license repo for 3D neural reconstruction and his work is supported by the NSF GRFP. Previously he finished his bachelor's at CMU where he worked with Howie Choset on multi-robot path planning, and spent time at Berkshire Grey and NASA's JPL.
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://sizhe-li.github.io/" target="_blank">
+        <div class="card">
+          <div class="card-content">
+            <div class="columns is-vcentered">
+              <div class="column is-one-quarter">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="./data/sizhe_li.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <p class="title is-4">Sizhe Lester Li</p>
+                <p class="subtitle is-6">MIT</p>
+              </div>
+            </div>
+            <div class="content">
+                Sizhe Lester Li is a PhD student at MIT CSAIL working with Vincent Sitzmann and Josh Tenenbaum. Previously, he completed his B.S. in Computer Science at the University of Rochester. His research is partly supported by the MIT Presidential Fellowship. He is interested in building inverse models that capture the rich and structured representation of the physical world from unstructured observation. To this end, his research draws ideas from vision+graphics, robotics, and computational cognitive science.
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section> -->
+
+  <section class="section" id="Papers">
+    <div class="container is-max-desktop content">
+      <h2 class="title" id="dates">Call for Papers</h2>
+      If paper submissions are included, a tentative program committee will be formed and a review timeline established. Papers will adhere to the ICCV 2025 style, format, and length. Further details on proceedings will be announced.
+    </div>
+  </section>
+
+  <!-- <section class="section" id="Accepted-Papers">
+    <div class="container is-max-desktop content">
+      <h2 class="title" id="papers">Accepted Papers</h2>
+      <ul>
+        <li><a href="https://openreview.net/forum?id=cv7X2FU1BM">CHOSEN: Contrastive Hypothesis Selection for Multi-View Depth Refinement</a> </li>
+        <li><a href="https://openreview.net/forum?id=CzlQ2RL4M2">BoostMVSNeRFs: Boosting MVS-based NeRFs to Generalizable View Synthesis in Large-scale Scenes</a> </li>
+        <li><a href="https://openreview.net/forum?id=Z6gDkuI5fu">SWAG: Splatting in the Wild images with Appearance-conditioned Gaussians</a> </li>
+        <li><a>PAPR Up-close: Close-up Neural Point Rendering without Holes</a></li>
+        <li><a>PROSE: Point Rendering of Sparse-Controlled Edits to Static Scenes</a></li>
+      </ul>
+    </div>
+  </section> -->
+
+  <section class="section" id="Organizers">
+    <div class="container is-max-desktop content">
+      <h2 class="title" id="organizers">Organizers</h2>
+
+      <div class="columns is-centered is-variable is-0">
+        <div class="column is-one-quarter">
+          <a href="https://zhiwenfan.github.io/">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img class="is-rounded" src="./data/Zhiwen Fan.jpeg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content" style="overflow-x: unset;">
+                    <p class="title is-6 is-spaced">Zhiwen Fan</p>
+                    <p class="subtitle is-7">UT Austin</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="column is-one-quarter">
+          <a href="https://qianqianwang68.github.io/">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img class="is-rounded" src="./data/Qianqian Wang.jpg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content" style="overflow-x: unset;">
+                    <p class="title is-6 is-spaced">Qianqian Wang</p>
+                    <p class="subtitle is-7">UC Berkeley</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="column is-one-quarter">
+          <a href="https://kam1107.github.io/">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img class="is-rounded" src="./data/Xiangli Yuanbo.jpg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content" style="overflow-x: unset;">
+                    <p class="title is-6 is-spaced">Yuanbo Xiangli</p>
+                    <p class="subtitle is-7">Cornell</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="column is-one-quarter">
+          <a href="https://vztu.github.io/">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img class="is-rounded" src="./data/Zhengzhong Tu.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content" style="overflow-x: unset;">
+                    <p class="title is-6 is-spaced">Prof. Zhengzhong Tu</p>
+                    <p class="subtitle is-7">Texas A&M</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="columns is-centered is-variable is-0">
+        <div class="column is-one-quarter">
+          <a href="https://vztu.github.io/">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img class="is-rounded" src="./data/Jiachen Li.jpg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content" style="overflow-x: unset;">
+                    <p class="title is-6 is-spaced">Prof. Jiachen Li</p>
+                    <p class="subtitle is-7">UC Riverside</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="column is-one-quarter">
+          <a href="https://geopavlakos.github.io/">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img class="is-rounded" src="./data/Georgios Pavlakos.jpg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content" style="overflow-x: unset;">
+                    <p class="title is-6 is-spaced">Prof. Georgios Pavlakos</p>
+                    <p class="subtitle is-7">UT Austin</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="column is-one-quarter">
+          <a href="https://wenyancong.com/">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img class="is-rounded" src="./data/Wenyan Cong.jpg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content" style="overflow-x: unset;">
+                    <p class="title is-6 is-spaced">Wenyan Cong</p>
+                    <p class="subtitle is-7">UT Austin</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="section" id="Reviewers">
+    <div class="container is-max-desktop content">
+      <h2 class="title" id="reviewers">Program Committee</h2>
+      <div class="content has-text-justified">
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td width="150">Mohamed El Banani</td>
+              <td width="150">Tianhang Cheng</td>
+              <td width="150">Zhiyang Dou</td>
+              <td width="150">Yidan Gao</td>
+            </tr>
+            <tr>
+              <td width="150">Gemmechu Hassena</td>
+              <td width="150">Yiming Huang</td>
+              <td width="150">Hanwen Jiang</td>
+              <td width="150">Linyi Jin</td>
+            </tr>
+            <tr>
+              <td width="150">Divya Kothandaraman</td>
+              <td width="150">Amy Lin</td>
+              <td width="150">Zhi-Hao Lin</td>
+              <td width="150">Shaowei Liu</td>
+            </tr>
+            <tr>
+              <td width="150">Jiaxin Lu</td>
+              <td width="150">Chuanruo Ning</td>
+              <td width="150">Chris Rockwell</td>
+              <td width="150">Yuan Shen</td>
+            </tr>
+            <tr>
+              <td width="150">Paridhi Singh</td>
+              <td width="150">Mayank Singh</td>
+              <td width="150">Shuhan Tan</td>
+              <td width="150">Zaid Tasneem</td>
+            </tr>
+            <tr>
+              <td width="150">Joseph Tung</td>
+              <td width="150">Chen Wang</td>
+              <td width="150">Jing Wen</td>
+              <td width="150">Yu Wu</td>
+            </tr>
+            <tr>
+              <td width="150">Yanbo Xu</td>
+              <td width="150">Jingsen Zhu</td>
+              <td width="150">Qitao Zhao</td>
+              <td width="150">Albert J. Zhai</td>
+            </tr>
+            <tr>
+              <td width="150">Bharath Raj Nagoor Kani</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="section" id="Sponsors">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Sponsors </h2>
+    </div>
+  </section> -->
+
+  <footer class="footer">
+    <div class="container is-max-desktop">
+      <div class="content">
+        <p>
+          Contact: <a href="mailto:e2e3d@googlegroups.com">e2e3d@googlegroups.com</a>
+          <br><br>
+          This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          <br>
+          It borrows the source code of <a href="https://github.com/nerfies/nerfies.github.io">this website</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+<script src="./data/jquery-2.1.1.js"></script>
+<script src="./data/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+<script src="./data/main.js"></script> <!-- Resource jQuery -->
+
+
+</div></section></section><div id="dc972c2f-992c-51c6-a634-8f72aeb33ee7"></div><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration>
+</body></html>
