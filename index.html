@@ -292,66 +292,54 @@
       <h2 class="title">Overview</h2>
       <div class="content has-text-justified">
         <p>
-          Recent breakthroughs in foundation models, such as GPT for language and CLIP/Segment Anything for images, 
-          have transformed the processing of 2D and textual data. However, the complexity of real-world applications—from 
-          large-scale autonomous systems to molecular modeling—demands that AI transcends flat images to achieve a 
-          comprehensive three-dimensional (3D) understanding, thereby addressing a broader spectrum of physical challenges.
+          Recent advances in foundation models—such as GPT for language and CLIP/Segment Anything for images—have driven rapid progress in two-dimensional (2D) and textual data processing. However, an expanding range of real-world applications, including large-scale autonomous systems, robotics, extended reality, and molecular modeling, requires deeper three-dimensional (3D) understanding. Moving beyond flat images to spatially grounded 3D representations is essential for addressing a broader set of physical and spatial challenges.
         </p>
-  
-        <blockquote>
-          <p>
-            “In the beginning of the universe, all was darkness—until the first organisms developed sight, opening the 
-            door to an explosion of life and learning.” — Fei-Fei Li on spatial intelligence
-          </p>
-        </blockquote>
-  
+        
         <p>
-          By enabling AI to perceive and generate 3D content, reason about spatial relationships, and make real-time 
-          decisions based on visual inputs—while integrating multi-modal capabilities—we can unlock unprecedented potential 
-          in content creation, machine perception, and action. Traditional methods for creating 3D models, such as 
-          Structure-from-Motion for 3D reconstruction, rely on a series of steps that can be slow and fragile, hindering 
-          scalability when dealing with massive, web-scale 3D data.
+          Many current 3D learning techniques (e.g., 3D reconstruction via Structure-from-Motion with dense stereo) still rely on sequential pipelines that are slow, prone to errors, and challenging to scale to massive, web-scale data. This workshop therefore aims to explore how these fragmented approaches can be replaced by a single, differentiable framework—one that processes raw imagery to directly produce complete 3D outputs. Such an end-to-end design can be trained on large-scale unannotated data and can enable downstream tasks that require a generalizable, real-time understanding of real-world geometry and semantics.
         </p>
-  
+        
         <p>
-          The <strong>End-to-End 3D Learning (E2E3D)</strong> workshop aims to bridge the gap between conventional, 
-          multi-stage pipelines for 3D reconstruction, understanding, and generation, and unified, data-driven approaches 
-          that operate directly from raw inputs to complete 3D outputs. An end-to-end approach leveraging deep models can 
-          directly infer, generate, and reason about 3D structures. Looking ahead, we envision systems that not only recover 
-          3D geometry but also continuously analyze dynamic scenes and make real-time decisions based on comprehensive 
-          visual inputs.
+          More specifically, the <strong>End-to-End 3D Learning (E2E3D)</strong> workshop will examine how best to unify modeling, inference, and optimization into a single data-driven architecture. By allowing AI systems to perceive images and generate 3D content, reason about geometric and semantic relationships, and integrate multi-modal signals, we can advance content creation, machine perception, and autonomous control.
         </p>
-  
+        
         <h3><strong>Focus of the Workshop:</strong></h3>
         <ul>
           <li>
-            <strong>Technology Development:</strong> Develop fundamental architectures and representations that consolidate 
-            traditional multi-stage pipelines into a unified, differentiable framework. Investigate self-supervised training 
-            for pretraining 3D foundation models on extensive, unannotated web-scale 3D data. Explore innovative methods 
-            to support real-time processing and facilitate efficient deployment.
+            <strong>Technology Development:</strong> A central question in end-to-end 3D learning is how to replace traditional multi-stage 3D pipelines with a single, differentiable model. This includes:
+            <ul>
+              <li>Designing unified network architectures that transform raw inputs (e.g., multi-view or single-view images) into final 3D outputs without extensive hand-engineered steps.</li>
+              <li>Leveraging self-supervised learning for pretraining large-scale 3D foundation models on vast, unannotated datasets.</li>
+              <li>Developing real-time inference techniques and efficient deployment methods for resource-limited platforms.</li>
+            </ul>
           </li>
+          
           <li>
-            <strong>Data Challenges:</strong> Formulate strategies for efficiently processing heterogeneous 3D data sources, 
-            including multi-view images, videos, point clouds, and volumetric data. Investigate methods to harness available 
-            2D and multi-modal image-text pairs to alleviate the scarcity of high-quality 3D datasets.
+            <strong>Data Challenges:</strong> Progress in end-to-end 3D learning also depends on effectively collecting diverse data sources and incorporating large-scale pretraining. Key topics include:
+            <ul>
+              <li>Methods for incorporating massive, unannotated sources (e.g., multi-view imagery from benchmarks or videos from YouTube) into robust pretraining pipelines.</li>
+              <li>Strategies to leverage existing 2D and multimodal image-text datasets to mitigate the shortage of high-quality 3D data.</li>
+              <li>Techniques for building automatic or semi-automatic tools that facilitate reliable 3D annotation for supervised finetuning.</li>
+            </ul>
           </li>
+          
           <li>
-            <strong>Real-World Impact:</strong> Present concrete examples and case studies that underscore the potential of 
-            an end-to-end 3D learning framework. Emphasize its practical applications in robotic systems, immersive AR/VR 
-            experiences, digital twins, and advanced scientific imaging, thereby illustrating how generalizable and real-time 
-            3D systems can resolve complex real-world challenges.
+            <strong>Real-World Impact:</strong> Another key objective is to create end-to-end 3D learning systems that have transformative applications. Discussions will include:
+            <ul>
+              <li>Case studies in autonomous driving, where fast and accurate 3D perception enhances safety and decision-making.</li>
+              <li>Real-time 3D scene understanding for AR/VR, robotics, and digital twins, demonstrating the advantages of integrated pipelines over traditional methods.</li>
+              <li>Scalable 3D modeling in scientific imaging and other fields requiring precise spatial analysis.</li>
+            </ul>
           </li>
         </ul>
-  
+        
         <p>
-          Our workshop is positioned at the intersection of established 2D and multi-modal methods and the emerging 
-          requirements of 3D AI. By uniting research from computer vision, robotics, autonomous driving, AR/VR, 
-          scientific imaging, and related fields, we aim to tackle physical challenges with unified, scalable, and 
-          efficient 3D solutions.
+          This workshop brings together researchers from computer vision, robotics, extended reality (XR), autonomous driving, scientific imaging, and related fields to foster interdisciplinary discussions on next-generation 3D systems. By spotlighting recent breakthroughs and identifying key challenges, we aim to inspire innovative research and practical applications across these domains.
         </p>
       </div>
     </div>
   </section>
+  
   
   
   <!-- <section class="section" id="schedule" style="margin-top:-100px">
