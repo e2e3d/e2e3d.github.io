@@ -23,7 +23,7 @@
 <style>
   .page-header1 {
     position: relative;
-    background-image: url('data/iccv.jpeg');
+    background-image: url('./data/CVPR_Denver_2026.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -267,9 +267,9 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title" style="color:#FF7F11 ">End-to-End 3D Learning<br></h1>
             <h2 class="title is-5 " style="color:#EFECCA;">
-              <strong>in conjunction with ICCV 2025, Honolulu, Hawai'i </strong>
+              <strong>in conjunction with CVPR 2026, Denver, CO </strong>
               <br><br>
-              <strong>Time: Oct 19 13:00 - 17:00</strong>
+              <strong>Time: TBD</strong>
             </h2>
           </div>
         </div>
@@ -278,9 +278,9 @@
 
       <h2 class="subtitle has-text-centered">
           <a href="#motivation" class="button">Overview</a>
-          <a href="#news" class="button">News</a>
+          <!-- <a href="#news" class="button">News</a> -->
           <a href="#speakers" class="button">Speakers</a>
-          <a href="#schedule" class="button">Schedule</a>
+          <!-- <a href="#schedule" class="button">Schedule</a> -->
           <a href="#dates" class="button">Call for Papers</a>
           <!-- <a href="#papers" class="button">Accepted Papers</a> -->
           <a href="#organizers" class="button">Organizers</a>
@@ -294,16 +294,9 @@
       <h2 class="title">Overview</h2>
       <div class="content has-text-justified">
         <p>
-          Recent advances in foundation models—such as GPT for language and CLIP/Segment Anything for images—have driven rapid progress in two-dimensional (2D) and textual data processing. However, an expanding range of real-world applications, including large-scale autonomous systems, robotics, extended reality, and molecular modeling, requires deeper three-dimensional (3D) understanding. Moving beyond flat images to spatially grounded 3D representations is essential for addressing a broader set of physical and spatial challenges.
-        </p>
-        
-        <p>
-          Many current 3D learning techniques (e.g., 3D reconstruction via Structure-from-Motion with dense stereo) still rely on sequential pipelines that are slow, prone to errors, and challenging to scale to massive, web-scale data. This workshop therefore aims to explore how these fragmented approaches can be replaced by a single, differentiable framework—one that processes raw imagery to directly produce complete 3D outputs. Such an end-to-end design can be trained on large-scale unannotated data and can enable downstream tasks that require a generalizable, real-time understanding of real-world geometry and semantics.
-        </p>
-        
-        <p>
-          More specifically, the <strong>End-to-End 3D Learning (E2E3D)</strong> workshop will examine how best to unify modeling, inference, and optimization into a single data-driven architecture. By allowing AI systems to perceive images and generate 3D content, reason about geometric and semantic relationships, and integrate multi-modal signals, we can advance content creation, machine perception, and autonomous control.
-        </p>
+          Large 2D vision and multimodal models have shown how to learn from both supervised and unannotated data and transfer across tasks. These lessons point to a clear path for 3D spatial tasks. Yet many 3D related systems still rely on long, brittle pipelines (e.g., COLMAP) that are hard to scale and slow to adapt.
+This workshop focuses on end-to-end 3D learning (E2E3D): a single trainable system that maps raw images or video to complete 3D representations, then supports downstream tasks that run in real time and scale with large datasets. Our goal is practical impact in robotics, extended reality, and scientific imaging.
+Topics include architectures that map from pixels to 3D without hand-tuned steps; cross-modal training; data engines that mine in-the-wild video at scale; tight integration with end-to-end planning and control; efficient deployment on edge devices and robots; and methods for scientific imaging, from protein structure to cellular microscopy. By unifying modeling, inference, and optimization in one data-driven approach, the E2E3D workshop aims to set a clear path for next-generation spatial intelligence systems.        </p>
         
         <h3><strong>Focus of the Workshop:</strong></h3>
         <ul>
@@ -343,15 +336,11 @@
   </section>
 
 
-  <section class="section" id="news">
+  <!-- <section class="section" id="news">
   <div class="container is-max-desktop content">
     <h2 class="title">News</h2>
     <div class="content has-text-justified">
       <ul>
-        <li>
-          <strong style="color:red;">[Oct 16, 2025]</strong>
-          Poster schedule (Oct 19, 14:35–15:40) is <a href="poster-schedule.html">here</a>!.
-        </li>
         <li>
           <strong style="color: red;">[June 30, 2025]</strong> The submission portal will remain open until <strong style="color: red;">July 1, 2025</strong>, allowing authors to optionally upload supplementary materials (e.g., videos or technical appendices). Please note that supplementary materials are entirely optional, and reviewers are not required to evaluate them.
         </li>
@@ -372,32 +361,32 @@
     </ul>
     </div>
   </div>
-</section> 
+</section>  -->
   
 
   <section class="section" id="speakers" style="margin-top:-50px">
     <div class="container is-max-desktop content">
       <h2 class="title" id="speakers">Invited Speakers</h2>
 
-      <a href="https://europe.naverlabs.com/people_user_naverlabs/vincent-leroy/" target="_blank">
+      <a href="https://jiajunwu.com/" target="_blank">
         <div class="card">
           <div class="card-content">
             <div class="columns is-vcentered">
               <div class="column is-one-quarter">
                 <figure class="image is-128x128">
-                  <img class="is-rounded" src="./data/vincent.jpg">
+                  <img class="is-rounded" src="./data/jiajun wu.jpg">
                 </figure>
               </div>
               <div class="column">
-                <p class="title is-4">Vincent Leroy</p> 
-                <p class="subtitle is-6">Naver Labs Europe</p>
-                <p class="subtitle is-7">Large geometric models: DUSt3R, MAST3R</p>
+                <p class="title is-4">Jiajun Wu</p> 
+                <p class="subtitle is-6">Stanford University</p>
+                <p class="subtitle is-7">Physical scene understanding</p>
               </div>
             </div>
           </div>
         </div>
       </a>
-      <a href="https://ruoshiliu.github.io/" target="_blank">
+      <!-- <a href="https://ruoshiliu.github.io/" target="_blank">
         <div class="card">
           <div class="card-content">
             <div class="columns is-vcentered">
@@ -414,8 +403,8 @@
             </div>
           </div>
         </div>
-      </a>
-      <a href="https://ir0.github.io/" target="_blank">
+      </a> -->
+      <!-- <a href="https://ir0.github.io/" target="_blank">
         <div class="card">
           <div class="card-content">
             <div class="columns is-vcentered">
@@ -432,10 +421,10 @@
             </div>
           </div>
         </div>
-      </a>
+      </a> -->
 
       
-
+<!-- 
       <a href="https://www.linkedin.com/in/rakesh-r-3848538/" target="_blank">
         <div class="card">
           <div class="card-content">
@@ -453,9 +442,9 @@
             </div>
           </div>
         </div>
-      </a>
+      </a> -->
 
-      <a href="https://jiakai-zhang.github.io/" target="_blank">
+      <!-- <a href="https://jiakai-zhang.github.io/" target="_blank">
         <div class="card">
           <div class="card-content">
             <div class="columns is-vcentered">
@@ -472,10 +461,10 @@
             </div>
           </div>
         </div>
-      </a>
+      </a> -->
       
 
-      <!-- <a href="https://web.stanford.edu/~pavone/index.html" target="_blank">
+      <a href="https://web.stanford.edu/~pavone/index.html" target="_blank">
         <div class="card">
           <div class="card-content">
             <div class="columns is-vcentered">
@@ -491,11 +480,30 @@
             </div>
           </div>
         </div>
-      </a> -->
+      </a>
+
+      <a href="https://lucacarlone.mit.edu/" target="_blank">
+        <div class="card">
+          <div class="card-content">
+            <div class="columns is-vcentered">
+              <div class="column is-one-quarter">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="./data/Luca Carlone.png">
+                </figure>
+              </div>
+              <div class="column">
+                <p class="title is-4">Luca Carlone</p>
+                <p class="subtitle is-6">MIT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
     </div>
   </section>
 
-
+<!-- 
   <section class="section" id="schedule">
     <div class="container is-max-desktop content">
       <h2 class="title">Schedule</h2>
@@ -520,9 +528,7 @@
             </tr>
             <tr>
               <td>14:35 - 15:40</td>
-              <td style="background-color:#EFECCA">
-                <a href="poster-schedule.html">Poster Session</a>
-              </td>
+              <td style="background-color:#EFECCA"> Poster Session</td>
             </tr>
             <tr>
               <td>15:40 - 16:10</td>
@@ -545,7 +551,7 @@
         </table>
       </div>
     </div>
-  </section>
+  </section> -->
 
 	<!-- <section class="section" id="Spotlight Speakers">
     <div class="container is-max-desktop content">
@@ -649,14 +655,14 @@
     </p>
     <br>
     <ul style="margin-left: 20px;">
-      <li><b>Submission Portal</b>: <a href="https://openreview.net/group?id=thecvf.com%2FICCV%2F2025%2FWorkshop%2FE2E3D&referrer=%5BHomepage%5D%28%2F%29#tab-your-consoles" target="_blank">OpenReview</a></li>
-      <li><b>Submission Start Date</b>: May 22, 2025, 00:00 GMT</li>
-      <li><b>Submission Deadline</b>: <del>June 29, 2025, 23:59 GMT</del> <span style="color: red;">July 1, 2025, 23:59 GMT</span> <i>(extended due to OpenReview downtime on June 28)</i></li>
-      <li><b>Reviewer Assignment Complete</b>: July 2, 2025</li>
+      <li><b>Submission Portal</b>: OpenReview
+      <!-- <li><b>Submission Start Date</b>: May 22, 2025, 00:00 GMT</li> -->
+      <li><b>Submission Deadline</b>: TBD
+      <!-- <li><b>Reviewer Assignment Complete</b>: July 2, 2025</li>
       <li><b>Review Period</b>: July 2 - <del>July 9</del> July 11, 2025</li>
-      <li><b>Discussion and Final Decisions</b>: <del>July 10</del> July 12, 2025</li>
-      <li><b>Notification to Authors</b>: <del>July 11</del> July 13, 2025</li>
-      <li><b>Camera-ready Deadline</b>: August 18, 2025</li>
+      <li><b>Discussion and Final Decisions</b>: <del>July 10</del> July 12, 2025</li> -->
+      <li><b>Notification to Authors</b>: TBD
+      <li><b>Camera-ready Deadline</b>: TBD
     </ul>
   </div>
 </section>
@@ -679,7 +685,7 @@
     <div class="container is-max-desktop content">
       <h2 class="title" id="organizers">Organizers</h2>
 
-      <div class="columns is-centered is-variable is-0">
+      <div class="columns is-centered is-variable is-0 is-multiline">
         <div class="column is-one-quarter">
           <a href="https://zhiwenfan.github.io/">
             <div class="card">
@@ -692,7 +698,7 @@
                 <div class="media">
                   <div class="media-content" style="overflow-x: unset;">
                     <p class="title is-6 is-spaced">Zhiwen Fan</p>
-                    <p class="subtitle is-7">UT Austin, TAMU</p>
+                    <p class="subtitle is-7">TAMU</p>
                   </div>
                 </div>
               </div>
@@ -719,30 +725,11 @@
           </a>
         </div>
         <div class="column is-one-quarter">
-          <a href="https://kam1107.github.io/">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img class="is-rounded" src="./data/Xiangli Yuanbo.jpg" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content" style="overflow-x: unset;">
-                    <p class="title is-6 is-spaced">Yuanbo Xiangli</p>
-                    <p class="subtitle is-7">Cornell</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="column is-one-quarter">
           <a href="https://wenyancong.com/">
             <div class="card">
               <div class="card-image">
                 <figure class="image">
-                  <img class="is-rounded" src="./data/Wenyan Cong.jpg" alt="Placeholder image">
+                  <img class="is-rounded" src="./data/Wenyan Cong_new.jpeg" alt="Placeholder image">
                 </figure>
               </div>
               <div class="card-content">
@@ -757,27 +744,66 @@
           </a>
         </div>
         <div class="column is-one-quarter">
-          <a href="https://lynl7130.github.io/">
+          <a href="https://limanling.github.io/">
             <div class="card">
               <div class="card-image">
                 <figure class="image">
-                  <img class="is-rounded" src="./data/Yiqing Liang.png" alt="Placeholder image">
+                  <img class="is-rounded" src="./data/manling li.jpg" alt="Placeholder image">
                 </figure>
               </div>
               <div class="card-content">
                 <div class="media">
                   <div class="media-content" style="overflow-x: unset;">
-                    <p class="title is-6 is-spaced">Yiqing Liang</p>
-                    <p class="subtitle is-7">Brown University</p>
+                    <p class="title is-6 is-spaced">Manling Li</p>
+                    <p class="subtitle is-7">Northwestern University</p>
                   </div>
                 </div>
               </div>
             </div>
           </a>
         </div>
+        <div class="column is-one-quarter">
+          <a href="https://vztu.github.io/">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img class="is-rounded" src="./data/Zhengzhong Tu.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content" style="overflow-x: unset;">
+                    <p class="title is-6 is-spaced">Zhengzhong Tu</p>
+                    <p class="subtitle is-7">TAMU</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- <div class="column is-12 p-0"></div>  -->
+        <div class="column is-one-quarter">
+          <a href="https://people.cs.rutgers.edu/~dnm/">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img class="is-rounded" src="./data/dimitris metaxas.jpg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content" style="overflow-x: unset;">
+                    <p class="title is-6 is-spaced">Dimitris Metaxas</p>
+                    <p class="subtitle is-7">Rutgers University</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
 
-        <div class="columns is-centered is-variable is-0">
+        <!-- <div class="columns is-centered is-variable is-0">
           <div class="column is-one-quarter">
             <a href="https://vztu.github.io/">
               <div class="card">
@@ -796,27 +822,9 @@
                 </div>
               </div>
             </a>
-          </div>
-          <div class="column is-one-quarter">
-            <a href="https://vztu.github.io/">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image">
-                    <img class="is-rounded" src="./data/Zhengzhong Tu.png" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content" style="overflow-x: unset;">
-                      <p class="title is-6 is-spaced">Zhengzhong Tu</p>
-                      <p class="subtitle is-7">TAMU</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="column is-one-quarter">
+          </div> -->
+          
+          <!-- <div class="column is-one-quarter">
             <a href="https://geopavlakos.github.io/">
               <div class="card">
                 <div class="card-image">
@@ -872,29 +880,29 @@
                 </div>
               </div>
             </a>
-          </div>
+          </div> -->
 
       </div>
     </div>
   </section>
 
-  <section class="section" id="sponsors">
+  <!-- <section class="section" id="sponsors">
   <div class="container is-max-desktop content">
     <h2 class="title" id="sponsors">Sponsors</h2>
     <div class="columns is-vcentered is-mobile">
       <div class="column has-text-centered">
         <figure class="image is-256x256 is-inline-block">
-          <img src="data/tencent-logo.png" alt="Sponsor 1">
+          <img src="./data/tencent-logo.png" alt="Sponsor 1">
         </figure>
       </div>
       <div class="column has-text-centered">
         <figure class="image is-512x512 is-inline-block">
-          <img src="data/suwa3d-logo.jpg" alt="Sponsor 2">
+          <img src="./data/suwa3d-logo.jpg" alt="Sponsor 2">
         </figure>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
   <!-- <section class="section" id="Reviewers">
     <div class="container is-max-desktop content">
