@@ -311,32 +311,24 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
         
         <h3><strong>Focus of the Workshop:</strong></h3>
         <ul>
-          <li>
-            <strong>Technology Development:</strong> A central question in end-to-end 3D learning is how to replace traditional multi-stage 3D pipelines with a single, differentiable model. This includes:
-            <ul>
-              <li>Designing unified network architectures that transform raw inputs (e.g., multi-view or single-view images) into final 3D outputs without extensive hand-engineered steps.</li>
-              <li>Leveraging self-supervised learning for pretraining large-scale 3D foundation models on vast, unannotated datasets.</li>
-              <li>Developing real-time inference techniques and efficient deployment methods for resource-limited platforms.</li>
-            </ul>
-          </li>
-          
-          <li>
-            <strong>Data Challenges:</strong> Progress in end-to-end 3D learning also depends on effectively collecting diverse data sources and incorporating large-scale pretraining. Key topics include:
-            <ul>
-              <li>Methods for incorporating massive, unannotated sources (e.g., multi-view imagery from benchmarks or videos from YouTube) into robust pretraining pipelines.</li>
-              <li>Strategies to leverage existing 2D and multimodal image-text datasets to mitigate the shortage of high-quality 3D data.</li>
-              <li>Techniques for building automatic or semi-automatic tools that facilitate reliable 3D annotation for supervised finetuning.</li>
-            </ul>
-          </li>
-          
-          <li>
-            <strong>Real-World Impact:</strong> Another key objective is to create end-to-end 3D learning systems that have transformative applications. Discussions will include:
-            <ul>
-              <li>Case studies in autonomous driving, where fast and accurate 3D perception enhances safety and decision-making.</li>
-              <li>Real-time 3D scene understanding for AR/VR, robotics, and digital twins, demonstrating the advantages of integrated pipelines over traditional methods.</li>
-              <li>Scalable 3D modeling in scientific imaging and other fields requiring precise spatial analysis.</li>
-            </ul>
-          </li>
+          <p><strong>Modeling and learning.</strong> 
+          E2E3D studies unified architectures that map pixels to 3D with minimal postprocessing; 
+          pretraining that embeds geometric priors such as scale, viewpoint, and occlusion; 
+          world models and vision-language-action models that use spatial memory to handle spatial-temporal dynamics; 
+          and differentiable rendering and physics that provide gradients for shape, appearance, and motion.</p>
+
+          <p><strong>Data and pretraining.</strong> 
+          E2E3D focuses on open scale data sources, including long video, multi-view, and multi-sensor logs for robust 3D pretraining; 
+          cross modal alignment that uses 2D and image-text corpora to ground language and action; 
+          auto annotation with quality control and reproducible protocols; 
+          and data governance covering licensing, privacy, and safety for 3D assets.</p>
+
+          <p><strong>Systems, evaluation, and impact.</strong> 
+          E2E3D emphasizes real time and edge deployment on robots and mobile devices; 
+          holistic metrics that report accuracy, latency, memory, and energy; 
+          robustness and safety for open world generalization and failure analysis; 
+          and applications in autonomous driving, XR, industrial and scientific imaging, and mapping.</p>
+
         </ul>
         
         <p>
@@ -379,6 +371,25 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
     <div class="container is-max-desktop content">
       <h2 class="title" id="speakers">Invited Speakers</h2>
 
+      <a href="https://geopavlakos.github.io/" target="_blank">
+        <div class="card">
+          <div class="card-content">
+            <div class="columns is-vcentered">
+              <div class="column is-one-quarter">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="./data/Georgios Pavlakos.jpg">
+                </figure>
+              </div>
+              <div class="column">
+                <p class="title is-4">Georgios Pavlakos</p>
+                <p class="subtitle is-6">UT Austin</p>
+                <p class="subtitle is-7">End-to-end view synthesis and 3D human</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
       <a href="https://jiajunwu.com/" target="_blank">
         <div class="card">
           <div class="card-content">
@@ -397,42 +408,43 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
           </div>
         </div>
       </a>
-      <!-- <a href="https://ruoshiliu.github.io/" target="_blank">
+
+      <a href="https://web.stanford.edu/~pavone/index.html" target="_blank">
         <div class="card">
           <div class="card-content">
             <div class="columns is-vcentered">
               <div class="column is-one-quarter">
                 <figure class="image is-128x128">
-                  <img class="is-rounded" src="./data/Ruoshi Liu.jpg">
+                  <img class="is-rounded" src="./data/Marco Pavone.jpg">
                 </figure>
               </div>
               <div class="column">
-                <p class="title is-4">Ruoshi Liu</p>
-                <p class="subtitle is-6">Columbia University</p>
-                <p class="subtitle is-7">Large generative models for the physical world</p>
+                <p class="title is-4">Marco Pavone</p>
+                <p class="subtitle is-6">Stanford / NVIDIA</p>
               </div>
             </div>
           </div>
         </div>
-      </a> -->
-      <!-- <a href="https://ir0.github.io/" target="_blank">
+      </a>
+      
+      <a href="https://psarlin.com/" target="_blank">
         <div class="card">
           <div class="card-content">
             <div class="columns is-vcentered">
               <div class="column is-one-quarter">
                 <figure class="image is-128x128">
-                  <img class="is-rounded" src="./data/Iro Armeni.png">
+                  <img class="is-rounded" src="./data/Paul Edouard Sarlin.jpg">
                 </figure>
               </div>
               <div class="column">
-                <p class="title is-4">Iro Armeni</p>
-                <p class="subtitle is-6">Stanford University</p>
-                <p class="subtitle is-7">Creating and updating 3D of evolving scenes</p>
+                <p class="title is-4">Paul Edouard Sarlin</p>
+                <p class="subtitle is-6">Google</p>
+                <p class="subtitle is-7">Geometric learning and mapping</p>
               </div>
             </div>
           </div>
         </div>
-      </a> -->
+      </a>
 
       
 <!-- 
@@ -475,23 +487,7 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
       </a> -->
       
 
-      <a href="https://web.stanford.edu/~pavone/index.html" target="_blank">
-        <div class="card">
-          <div class="card-content">
-            <div class="columns is-vcentered">
-              <div class="column is-one-quarter">
-                <figure class="image is-128x128">
-                  <img class="is-rounded" src="./data/Marco Pavone.jpg">
-                </figure>
-              </div>
-              <div class="column">
-                <p class="title is-4">Marco Pavone</p>
-                <p class="subtitle is-6">Stanford / NVIDIA</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+      
 
       <a href="https://lucacarlone.mit.edu/" target="_blank">
         <div class="card">
@@ -833,46 +829,27 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
         </a>
       </div>
 
-        <!-- <div class="columns is-centered is-variable is-0">
+        <div class="columns is-centered is-variable is-0">
           <div class="column is-one-quarter">
-            <a href="https://vztu.github.io/">
+            <a href="https://siyuhuang.github.io/">
               <div class="card">
                 <div class="card-image">
                   <figure class="image">
-                    <img class="is-rounded" src="./data/Jiachen Li.jpg" alt="Placeholder image">
+                    <img class="is-rounded" src="./data/Siyu Huang.jpg" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">
                   <div class="media">
                     <div class="media-content" style="overflow-x: unset;">
-                      <p class="title is-6 is-spaced">Jiachen Li</p>
-                      <p class="subtitle is-7">UC, Riverside</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div> -->
-          
-          <!-- <div class="column is-one-quarter">
-            <a href="https://geopavlakos.github.io/">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image">
-                    <img class="is-rounded" src="./data/Georgios Pavlakos.jpg" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content" style="overflow-x: unset;">
-                      <p class="title is-6 is-spaced">Georgios Pavlakos</p>
-                      <p class="subtitle is-7">UT Austin</p>
+                      <p class="title is-6 is-spaced">Siyu Huang</p>
+                      <p class="subtitle is-7">Clemson University</p>
                     </div>
                   </div>
                 </div>
               </div>
             </a>
           </div>
+          
           <div class="column is-one-quarter">
             <a href="https://research.nvidia.com/labs/avg/author/yan-wang/">
               <div class="card">
@@ -893,24 +870,24 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
             </a>
           </div>
           <div class="column is-one-quarter">
-            <a href="https://samueli.ucla.edu/people/achuta-kadambi/">
+            <a href="https://www.linkedin.com/in/rakesh-r-3848538/">
               <div class="card">
                 <div class="card-image">
                   <figure class="image">
-                    <img class="is-rounded" src="./data/Achuta Kadambi.png" alt="Placeholder image">
+                    <img class="is-rounded" src="" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">
                   <div class="media">
                     <div class="media-content" style="overflow-x: unset;">
-                      <p class="title is-6 is-spaced">Achuta Kadambi</p>
-                      <p class="subtitle is-7">UCLA</p>
+                      <p class="title is-6 is-spaced">Rakesh Ranjan</p>
+                      <p class="subtitle is-7">Meta Reality Labs</p>
                     </div>
                   </div>
                 </div>
               </div>
             </a>
-          </div> -->
+          </div>
 
       </div>
     </div>
