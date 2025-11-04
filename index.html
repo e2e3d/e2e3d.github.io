@@ -277,7 +277,7 @@
     </div>
 
       <h2 class="subtitle has-text-centered">
-          <a href="#motivation" class="button">Overview</a>
+          <a href="#motivation" class="button">Abstract</a>
           <!-- <a href="#news" class="button">News</a> -->
           <a href="#speakers" class="button">Speakers</a>
           <!-- <a href="#schedule" class="button">Schedule</a> -->
@@ -302,10 +302,10 @@
 
 <section class="section" id="motivation">
     <div class="container is-max-desktop content">
-      <h2 class="title">Overview</h2>
+      <h2 class="title">Abstract</h2>
       <div class="content has-text-justified">
         <p>
-          Large 2D vision and multimodal models have shown how to learn from both supervised and unannotated data and transfer across tasks. These lessons point to a clear path for 3D spatial tasks. Yet many 3D related systems still rely on long, brittle pipelines (e.g., COLMAP) that are hard to scale and slow to adapt.
+          <h3><strong>Overview:</strong></h3>Large 2D vision and multimodal models have shown how to learn from both supervised and unannotated data and transfer across tasks. These lessons point to a clear path for 3D spatial tasks. Yet many 3D related systems still rely on long, brittle pipelines (e.g., COLMAP) that are hard to scale and slow to adapt.
 This workshop focuses on end-to-end 3D learning (E2E3D): a single trainable system that maps raw images or video to complete 3D representations, then supports downstream tasks that run in real time and scale with large datasets. Our goal is practical impact in robotics, extended reality, and scientific imaging.
 Topics include architectures that map from pixels to 3D without hand-tuned steps; cross-modal training; data engines that mine in-the-wild video at scale; tight integration with end-to-end planning and control; efficient deployment on edge devices and robots; and methods for scientific imaging, from protein structure to cellular microscopy. By unifying modeling, inference, and optimization in one data-driven approach, the E2E3D workshop aims to set a clear path for next-generation spatial intelligence systems.        </p>
         
@@ -508,55 +508,77 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
     </div>
   </section>
 
-<!-- 
-  <section class="section" id="schedule">
-    <div class="container is-max-desktop content">
-      <h2 class="title">Schedule</h2>
-      <div class="content has-text-justified">
-        <table class="table table-striped">
-          <tbody>
-            <tr>
-              <td width="130">13:00 - 13:05</td>
-              <td width="300" style="background-color:#EFECCA">Opening Remarks </td>
-            </tr>
-            <tr>
-              <td>13:05 - 13:35</td>
-              <td style="background-color:#795663;color:#EFECCA">Keynote: Vincent Leroy<b></b></td>
-            </tr>
-            <tr>
-              <td>13:35 - 14:05</td>
-              <td style="background-color:#795663;color:#EFECCA">Keynote: Ruoshi Liu<b></b></td>
-            </tr>
-            <tr>
-              <td>14:05 - 14:35 </td>
-              <td style="background-color:#795663;color:#EFECCA">Keynote: Iro Armeni<b></b></td>
-            </tr>
-            <tr>
-              <td>14:35 - 15:40</td>
-              <td style="background-color:#EFECCA"> Poster Session</td>
-            </tr>
-            <tr>
-              <td>15:40 - 16:10</td>
-              <td style="background-color:#795663;color:#EFECCA">Keynote: Rakesh Ranjan<b></b></td>
-            </tr>
-            <tr>
-              <td>16:10 - 16:25</td>
-              <td style="background-color:#795663;color:#EFECCA">Awarding Ceremony<b></b></td>
-            </tr>
-            <tr>
-              <td>16:25 - 16:55</td>
-              <td style="background-color:#795663;color:#EFECCA">Keynote: Jiakai Zhang<b></b></td>
-            <tr>
-              <td>16:55 - 17:00</td>
-              <td style="background-color:#EFECCA">Closing Remarks
-            </tr>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+<section class="section" id="schedule">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Schedule</h2>
+    <div class="content has-text-justified">
+
+      <div class="columns">
+        <!-- Left column -->
+        <div class="column">
+          <table class="table is-striped is-fullwidth">
+            <thead>
+              <tr>
+                <th width="130">Time</th>
+                <th>Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>00:00-00:05</td>
+                <td>Opening Remarks</td>
+              </tr>
+              <tr>
+                <td>00:05-00:50</td>
+                <td>Keynote: Georgios Pavlakos</td>
+              </tr>
+              <tr>
+                <td>00:50-01:35</td>
+                <td>Keynote: Jiajun Wu</td>
+              </tr>
+              <tr>
+                <td>01:35-02:20</td>
+                <td>Keynote: Paul-Edouard Sarlin</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Right column -->
+        <div class="column">
+          <table class="table is-striped is-fullwidth">
+            <thead>
+              <tr>
+                <th width="130">Time</th>
+                <th>Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>02:20-03:05</td>
+                <td>Poster and Awards Session</td>
+              </tr>
+              <tr>
+                <td>03:05-03:50</td>
+                <td>Keynote: Marco Pavone</td>
+              </tr>
+              <tr>
+                <td>03:50-04:35</td>
+                <td>Keynote: Luca Carlone</td>
+              </tr>
+              <tr>
+                <td>04:35-04:45</td>
+                <td>Closing Remarks</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
+
     </div>
-  </section> -->
+  </div>
+</section>
+
 
 	<!-- <section class="section" id="Spotlight Speakers">
     <div class="container is-max-desktop content">
@@ -786,6 +808,7 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
             </div>
           </a>
         </div>
+
         <div class="column is-one-quarter">
           <a href="https://vztu.github.io/">
             <div class="card">
@@ -843,7 +866,6 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
               </div>
             </a>
           </div>
-          
           <div class="column is-one-quarter">
             <a href="https://research.nvidia.com/labs/avg/author/yan-wang/">
               <div class="card">
@@ -868,7 +890,7 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
               <div class="card">
                 <div class="card-image">
                   <figure class="image">
-                    <img class="is-rounded" src="" alt="Placeholder image">
+                    <img class="is-rounded" src="./data/Rakesh Ranjan.jpeg" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">
