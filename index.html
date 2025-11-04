@@ -257,6 +257,30 @@
     width: 110px;
     height: 36px;
 }
+.organizer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 280px;               /* 👈 consistent card height */
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.organizer-card .card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;   /* align text consistently */
+}
+.organizer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+.organizer-card .image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 1rem auto;
+}
 </style></head>
 
 <body data-new-gr-c-s-check-loaded="14.1065.0" data-gr-ext-installed="">
@@ -707,7 +731,6 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
       </ul>
     </div>
   </section> -->
-
 <section class="section" id="Organizers">
   <div class="container is-max-desktop content">
     <h2 class="title" id="organizers">Organizers</h2>
@@ -717,7 +740,7 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
       <!-- Row 1 -->
       <div class="column is-one-fifth">
         <a href="https://zhiwenfan.github.io/">
-          <div class="card">
+          <div class="card organizer-card">
             <div class="card-image">
               <figure class="image">
                 <img class="is-rounded" src="./data/Zhiwen Fan.jpeg" alt="Zhiwen Fan">
@@ -733,7 +756,7 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
 
       <div class="column is-one-fifth">
         <a href="https://people.cs.rutgers.edu/~dnm/">
-          <div class="card">
+          <div class="card organizer-card">
             <div class="card-image">
               <figure class="image">
                 <img class="is-rounded" src="./data/dimitris metaxas.jpg" alt="Dimitris Metaxas">
@@ -749,7 +772,7 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
 
       <div class="column is-one-fifth">
         <a href="https://qianqianwang68.github.io/">
-          <div class="card">
+          <div class="card organizer-card">
             <div class="card-image">
               <figure class="image">
                 <img class="is-rounded" src="./data/Qianqian Wang.jpg" alt="Qianqian Wang">
@@ -765,7 +788,7 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
 
       <div class="column is-one-fifth">
         <a href="https://wenyancong.com/">
-          <div class="card">
+          <div class="card organizer-card">
             <div class="card-image">
               <figure class="image">
                 <img class="is-rounded" src="./data/Wenyan Cong_new.jpeg" alt="Wenyan Cong">
@@ -781,7 +804,7 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
 
       <div class="column is-one-fifth">
         <a href="https://limanling.github.io/">
-          <div class="card">
+          <div class="card organizer-card">
             <div class="card-image">
               <figure class="image">
                 <img class="is-rounded" src="./data/manling li.jpg" alt="Manling Li">
@@ -798,7 +821,7 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
       <!-- Row 2 -->
       <div class="column is-one-fifth">
         <a href="https://vztu.github.io/">
-          <div class="card">
+          <div class="card organizer-card">
             <div class="card-image">
               <figure class="image">
                 <img class="is-rounded" src="./data/Zhengzhong Tu.png" alt="Zhengzhong Tu">
@@ -814,7 +837,7 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
 
       <div class="column is-one-fifth">
         <a href="https://delta-lab-ai.github.io/people.html">
-          <div class="card">
+          <div class="card organizer-card">
             <div class="card-image">
               <figure class="image">
                 <img class="is-rounded" src="./data/wuyang_chen.jpg" alt="Wuyang Chen">
@@ -830,7 +853,7 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
 
       <div class="column is-one-fifth">
         <a href="https://siyuhuang.github.io/">
-          <div class="card">
+          <div class="card organizer-card">
             <div class="card-image">
               <figure class="image">
                 <img class="is-rounded" src="./data/Siyu Huang.jpg" alt="Siyu Huang">
@@ -846,7 +869,7 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
 
       <div class="column is-one-fifth">
         <a href="https://research.nvidia.com/labs/avg/author/yan-wang/">
-          <div class="card">
+          <div class="card organizer-card">
             <div class="card-image">
               <figure class="image">
                 <img class="is-rounded" src="./data/Yan Wang.png" alt="Yan Wang">
@@ -862,7 +885,7 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
 
       <div class="column is-one-fifth">
         <a href="https://www.linkedin.com/in/rakesh-r-3848538/">
-          <div class="card">
+          <div class="card organizer-card">
             <div class="card-image">
               <figure class="image">
                 <img class="is-rounded" src="./data/Rakesh Ranjan.jpeg" alt="Rakesh Ranjan">
