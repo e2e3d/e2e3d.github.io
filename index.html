@@ -257,29 +257,61 @@
     width: 110px;
     height: 36px;
 }
+
+/* Modern, clean style for organizers */
 .organizer-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 280px;               /* 👈 consistent card height */
-  text-align: center;
-  transition: all 0.2s ease-in-out;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease-in-out;
 }
-.organizer-card .card-content {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;   /* align text consistently */
-}
+
 .organizer-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
-.organizer-card .image img {
-  width: 150px;
-  height: 150px;
+
+.organizer-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
   object-fit: cover;
-  margin: 1rem auto;
+  margin-bottom: 1rem;
+  border: 2px solid #eee;
+}
+
+.organizer-name {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #222;
+  margin-bottom: 0.25rem;
+}
+
+.organizer-affiliation {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 1024px) {
+  .organizer-photo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .organizer-photo {
+    width: 100px;
+    height: 100px;
+  }
+  .organizer-name {
+    font-size: 1rem;
+  }
+  .organizer-affiliation {
+    font-size: 0.8rem;
+  }
 }
 </style></head>
 
@@ -731,89 +763,60 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
       </ul>
     </div>
   </section> -->
+
 <section class="section" id="Organizers">
   <div class="container is-max-desktop content">
-    <h2 class="title" id="organizers">Organizers</h2>
+    <h2 class="title has-text-centered" id="organizers">Organizers</h2>
 
-    <div class="columns is-centered is-variable is-2 is-multiline">
+    <div class="columns is-centered is-variable is-2 is-multiline has-text-centered">
 
-      <!-- Row 1 -->
+      <!-- Organizer template -->
       <div class="column is-one-fifth">
         <a href="https://zhiwenfan.github.io/">
-          <div class="card organizer-card">
-            <div class="card-image">
-              <figure class="image">
-                <img class="is-rounded" src="./data/Zhiwen Fan.jpeg" alt="Zhiwen Fan">
-              </figure>
-            </div>
-            <div class="card-content has-text-centered">
-              <p class="title is-6">Zhiwen Fan</p>
-              <p class="subtitle is-7">TAMU</p>
-            </div>
+          <div class="organizer-card">
+            <img src="./data/Zhiwen Fan.jpeg" alt="Zhiwen Fan" class="organizer-photo">
+            <p class="organizer-name">Zhiwen Fan</p>
+            <p class="organizer-affiliation">TAMU</p>
           </div>
         </a>
       </div>
 
       <div class="column is-one-fifth">
         <a href="https://people.cs.rutgers.edu/~dnm/">
-          <div class="card organizer-card">
-            <div class="card-image">
-              <figure class="image">
-                <img class="is-rounded" src="./data/dimitris metaxas.jpg" alt="Dimitris Metaxas">
-              </figure>
-            </div>
-            <div class="card-content has-text-centered">
-              <p class="title is-6">Dimitris Metaxas</p>
-              <p class="subtitle is-7">Rutgers University</p>
-            </div>
+          <div class="organizer-card">
+            <img src="./data/dimitris metaxas.jpg" alt="Dimitris Metaxas" class="organizer-photo">
+            <p class="organizer-name">Dimitris Metaxas</p>
+            <p class="organizer-affiliation">Rutgers University</p>
           </div>
         </a>
       </div>
 
       <div class="column is-one-fifth">
         <a href="https://qianqianwang68.github.io/">
-          <div class="card organizer-card">
-            <div class="card-image">
-              <figure class="image">
-                <img class="is-rounded" src="./data/Qianqian Wang.jpg" alt="Qianqian Wang">
-              </figure>
-            </div>
-            <div class="card-content has-text-centered">
-              <p class="title is-6">Qianqian Wang</p>
-              <p class="subtitle is-7">UC, Berkeley</p>
-            </div>
+          <div class="organizer-card">
+            <img src="./data/Qianqian Wang.jpg" alt="Qianqian Wang" class="organizer-photo">
+            <p class="organizer-name">Qianqian Wang</p>
+            <p class="organizer-affiliation">UC, Berkeley</p>
           </div>
         </a>
       </div>
 
       <div class="column is-one-fifth">
         <a href="https://wenyancong.com/">
-          <div class="card organizer-card">
-            <div class="card-image">
-              <figure class="image">
-                <img class="is-rounded" src="./data/Wenyan Cong_new.jpeg" alt="Wenyan Cong">
-              </figure>
-            </div>
-            <div class="card-content has-text-centered">
-              <p class="title is-6">Wenyan Cong</p>
-              <p class="subtitle is-7">UT Austin</p>
-            </div>
+          <div class="organizer-card">
+            <img src="./data/Wenyan Cong_new.jpeg" alt="Wenyan Cong" class="organizer-photo">
+            <p class="organizer-name">Wenyan Cong</p>
+            <p class="organizer-affiliation">UT Austin</p>
           </div>
         </a>
       </div>
 
       <div class="column is-one-fifth">
         <a href="https://limanling.github.io/">
-          <div class="card organizer-card">
-            <div class="card-image">
-              <figure class="image">
-                <img class="is-rounded" src="./data/manling li.jpg" alt="Manling Li">
-              </figure>
-            </div>
-            <div class="card-content has-text-centered">
-              <p class="title is-6">Manling Li</p>
-              <p class="subtitle is-7">Northwestern University</p>
-            </div>
+          <div class="organizer-card">
+            <img src="./data/manling li.jpg" alt="Manling Li" class="organizer-photo">
+            <p class="organizer-name">Manling Li</p>
+            <p class="organizer-affiliation">Northwestern University</p>
           </div>
         </a>
       </div>
@@ -821,80 +824,50 @@ Topics include architectures that map from pixels to 3D without hand-tuned steps
       <!-- Row 2 -->
       <div class="column is-one-fifth">
         <a href="https://vztu.github.io/">
-          <div class="card organizer-card">
-            <div class="card-image">
-              <figure class="image">
-                <img class="is-rounded" src="./data/Zhengzhong Tu.png" alt="Zhengzhong Tu">
-              </figure>
-            </div>
-            <div class="card-content has-text-centered">
-              <p class="title is-6">Zhengzhong Tu</p>
-              <p class="subtitle is-7">TAMU</p>
-            </div>
+          <div class="organizer-card">
+            <img src="./data/Zhengzhong Tu.png" alt="Zhengzhong Tu" class="organizer-photo">
+            <p class="organizer-name">Zhengzhong Tu</p>
+            <p class="organizer-affiliation">TAMU</p>
           </div>
         </a>
       </div>
 
       <div class="column is-one-fifth">
         <a href="https://delta-lab-ai.github.io/people.html">
-          <div class="card organizer-card">
-            <div class="card-image">
-              <figure class="image">
-                <img class="is-rounded" src="./data/wuyang_chen.jpg" alt="Wuyang Chen">
-              </figure>
-            </div>
-            <div class="card-content has-text-centered">
-              <p class="title is-6">Wuyang Chen</p>
-              <p class="subtitle is-7">Simon Fraser University</p>
-            </div>
+          <div class="organizer-card">
+            <img src="./data/wuyang_chen.jpg" alt="Wuyang Chen" class="organizer-photo">
+            <p class="organizer-name">Wuyang Chen</p>
+            <p class="organizer-affiliation">Simon Fraser University</p>
           </div>
         </a>
       </div>
 
       <div class="column is-one-fifth">
         <a href="https://siyuhuang.github.io/">
-          <div class="card organizer-card">
-            <div class="card-image">
-              <figure class="image">
-                <img class="is-rounded" src="./data/Siyu Huang.jpg" alt="Siyu Huang">
-              </figure>
-            </div>
-            <div class="card-content has-text-centered">
-              <p class="title is-6">Siyu Huang</p>
-              <p class="subtitle is-7">Clemson University</p>
-            </div>
+          <div class="organizer-card">
+            <img src="./data/Siyu Huang.jpg" alt="Siyu Huang" class="organizer-photo">
+            <p class="organizer-name">Siyu Huang</p>
+            <p class="organizer-affiliation">Clemson University</p>
           </div>
         </a>
       </div>
 
       <div class="column is-one-fifth">
         <a href="https://research.nvidia.com/labs/avg/author/yan-wang/">
-          <div class="card organizer-card">
-            <div class="card-image">
-              <figure class="image">
-                <img class="is-rounded" src="./data/Yan Wang.png" alt="Yan Wang">
-              </figure>
-            </div>
-            <div class="card-content has-text-centered">
-              <p class="title is-6">Yan Wang</p>
-              <p class="subtitle is-7">NVIDIA Research</p>
-            </div>
+          <div class="organizer-card">
+            <img src="./data/Yan Wang.png" alt="Yan Wang" class="organizer-photo">
+            <p class="organizer-name">Yan Wang</p>
+            <p class="organizer-affiliation">NVIDIA Research</p>
           </div>
         </a>
       </div>
 
       <div class="column is-one-fifth">
         <a href="https://www.linkedin.com/in/rakesh-r-3848538/">
-          <div class="card organizer-card">
-            <div class="card-image">
-              <figure class="image">
-                <img class="is-rounded" src="./data/Rakesh Ranjan.jpeg" alt="Rakesh Ranjan">
-              </figure>
-            </div>
-            <div class="card-content has-text-centered">
-              <p class="title is-6">Rakesh Ranjan</p>
-              <p class="subtitle is-7">Meta Reality Labs</p>
-            </div>
+          <div class="organizer-card">
+            <img src="./data/Rakesh Ranjan.jpeg" alt="Rakesh Ranjan" class="organizer-photo">
+            <p class="organizer-name">Rakesh Ranjan</p>
+            <p class="organizer-affiliation">Meta Reality Labs</p>
           </div>
         </a>
       </div>
