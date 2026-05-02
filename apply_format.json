@@ -24,7 +24,6 @@
     {"order": 10, "section": "Required Materials",    "column": "Research Vision Proposal (PDF)",     "type": "file_upload",     "required": true,  "validation": {"allowed_types": ["pdf"], "max_files": 1, "max_file_size_mb": 10}, "desc": "1-page PDF. Include: Abstract, Research Thrust, Broader Impact in Spatial Intelligence."},
     {"order": 11, "section": "Declarations",          "column": "Eligibility Confirmation",           "type": "checkbox_single", "required": true,  "options": ["I confirm I am a current PhD student or postdoctoral researcher at the time of submission."], "desc": "Mandatory attestation."},
     {"order": 12, "section": "Declarations",          "column": "Non-Organizer Confirmation",         "type": "checkbox_single", "required": true,  "options": ["I confirm I am not a current organizer of the E2E3D Workshop at CVPR 2026."], "desc": "Mandatory attestation."},
-    {"order": 13, "section": "Declarations",          "column": "Single-Submission Confirmation",     "type": "checkbox_single", "required": true,  "options": ["I confirm this is my only submission to this award cycle."], "desc": "Mandatory attestation."},
     {"order": 14, "section": "Declarations",          "column": "Conflicts of Interest",              "type": "paragraph",       "required": false, "desc": "Optional. People who should not review (advisors, recent collaborators)."}
   ],
   "notes": {
