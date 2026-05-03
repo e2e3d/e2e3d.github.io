@@ -1,0 +1,33 @@
+{
+  "form_title": "Rising Star Award for Spatial Intelligence — Application",
+  "form_description": "E2E3D Workshop @ CVPR 2026. Deadline: May 22, 2026, 11:59 PM PST. Selects 1 awardee + 4 finalists; up to USD 30,000 gift to awardee's institution. Eligible: current PhD students and postdocs (not E2E3D organizers); one application per person. Contact: e2e3d@googlegroups.com.",
+  "settings": {
+    "collect_email": true,
+    "limit_one_response_per_user": true,
+    "require_login": true,
+    "send_response_receipt_to_respondent": true,
+    "linked_sheet_name": "Rising Star Award 2026 — Responses",
+    "confirmation_message": "Thank you. Your application has been received. You will hear back by May 31, 2026."
+  },
+  "auto_columns": ["Timestamp", "Email Address"],
+  "sections": ["Applicant Information", "Research Focus", "Required Materials", "Declarations"],
+  "columns": [
+    {"order": 1,  "section": "Applicant Information", "column": "Full Name",                          "type": "short_answer",    "required": true,  "desc": "Full legal or preferred name."},
+    {"order": 2,  "section": "Applicant Information", "column": "Current Affiliation",                "type": "short_answer",    "required": true,  "desc": "University, lab, or institute."},
+    {"order": 3,  "section": "Applicant Information", "column": "Current Role",                       "type": "multiple_choice", "required": true,  "options": ["PhD Student", "Postdoctoral Researcher"], "desc": "Eligibility role at submission."},
+    {"order": 4,  "section": "Applicant Information", "column": "Advisor / Supervisor",               "type": "short_answer",    "required": false, "desc": "PhD advisor or postdoc supervisor."},
+    {"order": 5,  "section": "Applicant Information", "column": "Personal Website / Google Scholar",  "type": "short_answer",    "required": true,  "validation": "url", "desc": "Personal page or Scholar profile."},
+    {"order": 6,  "section": "Applicant Information", "column": "Country / Region",                   "type": "short_answer",    "required": false, "desc": "Country/region of current institution."},
+    {"order": 7,  "section": "Research Focus",        "column": "Primary Research Area",              "type": "multiple_choice", "required": true,  "options": ["3D reconstruction", "3D generation and editing", "3D representations", "4D and world models", "Spatial intelligence and embodied AI", "Spatial computing, XR, and mixed reality", "Data, evaluation, and systems", "Other"], "desc": "Single best-fit area."},
+    {"order": 8,  "section": "Research Focus",        "column": "Short Bio",                          "type": "paragraph",       "required": true,  "validation": "max_words:150", "desc": "≤150 words. Background, role, key prior work."},
+    {"order": 9,  "section": "Required Materials",    "column": "Research Achievement Summary (PDF)", "type": "file_upload",     "required": true,  "validation": {"allowed_types": ["pdf"], "max_files": 1, "max_file_size_mb": 10}, "desc": "1-page PDF: papers, datasets, benchmarks, releases, demos, awards, leadership."},
+    {"order": 10, "section": "Required Materials",    "column": "Research Vision Proposal (PDF)",     "type": "file_upload",     "required": true,  "validation": {"allowed_types": ["pdf"], "max_files": 1, "max_file_size_mb": 10}, "desc": "1-page PDF. Include: Abstract, Research Thrust, Broader Impact in Spatial Intelligence."},
+    {"order": 11, "section": "Declarations",          "column": "Eligibility Confirmation",           "type": "checkbox_single", "required": true,  "options": ["I confirm I am a current PhD student or postdoctoral researcher at the time of submission."], "desc": "Mandatory attestation."},
+    {"order": 12, "section": "Declarations",          "column": "Non-Organizer Confirmation",         "type": "checkbox_single", "required": true,  "options": ["I confirm I am not a current organizer of the E2E3D Workshop at CVPR 2026."], "desc": "Mandatory attestation."},
+    {"order": 14, "section": "Declarations",          "column": "Conflicts of Interest",              "type": "paragraph",       "required": false, "desc": "Optional. People who should not review (advisors, recent collaborators)."}
+  ],
+  "notes": {
+    "types": "short_answer, paragraph, multiple_choice (single select), checkbox_single (one-option Checkboxes used as required attestation), file_upload (needs sign-in + Drive permission).",
+    "validation": "url = requireTextIsUrl; max_words:N = soft limit, state in description; allowed_types/max_files/max_file_size_mb apply to file_upload."
+  }
+}
